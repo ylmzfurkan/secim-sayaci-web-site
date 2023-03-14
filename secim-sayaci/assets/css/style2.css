@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    overflow: hidden;
+    font-family:"Roboto" , sans-serif;
+    font-style: bold;
+    font-size: large;
+    float: right;
+    margin-top: 30px;
+    letter-spacing: 0.7px;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    float: right;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 18px 80px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #B3B3B3;
+    border-radius: 9px;
+    color: black;
+
+  }
+
+  @keyframes gradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+  }
+  
+  body {
+    background-image: url(img/background.jpg);
+    background: linear-gradient(45deg, #000000, #333333);
+    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #000000, #333333);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    background-position: top;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins" , sans-serif;
+    position: relative;
+
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.candidates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .candidate {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 250px;
+    flex-direction: row;
+    
+
+
+  }
+  
+  .candidate img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15%;
+  }
+  
+  .candidate h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .candidate:hover img {
+    transform: scale(1.2);
+  }
+  
+  .candidate:hover h3 {
+    opacity: 1;
+  }
+  
+  .candidate img:hover {
+    filter: brightness(120%);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  .info {
+    margin-top: 30px;
+    text-align: center;
+    color:white;
+    font-family: "Roboto" , sans-serif;
+    transform: scale(1.2);
+  }
+
+  .info:hover{
+    color: red;
+}
+  p {
+    margin-bottom: 10px;
+    
+  }
+
